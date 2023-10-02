@@ -1,0 +1,9 @@
+# Ignoring files generated when compilating the tex file
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.gz
