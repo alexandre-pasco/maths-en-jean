@@ -26,7 +26,7 @@
 \usepackage{bbm}
 \usepackage{lipsum}
 \usepackage{hyperref}
-\hypersetup{hidelinks}
+%\hypersetup{hidelinks}
 \usepackage[capitalize,nameinlink]{cleveref}
 \usepackage{anyfontsize}
 \usepackage[labelfont=bf]{caption}
@@ -59,6 +59,26 @@
 
 \maketitle
 
+
+\section{Ta fête}
+
+\subsection{Problème}
+
+Vous choisissez aléatoirement des personnes pour participer à une fête. 
+Au minimum, combien de personnes faut-il choisir pour qu'il existe un groupe de $3$ personnes qui se connaissent (ou ne se connaissent pas) mutuellement ? 
+
+
+\subsection{Solution}
+
+C'est une illustration du 
+\href{
+  https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Ramsey#Exemple_:_calcul_de_R(3,3)_=_6
+}{théorème des amis et des étrangers}
+, qui est lui même un cas particulier du
+\href{
+  https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_des_amis_et_des_%C3%A9trangers
+}{théorème de Ramsey}.
+L'idée est que dès qu'un individu connaît ou ne connaît pas au moins $3$ personnes, alors parmi ces $3+1$ personnes il y a au moins un trio qui se connaissent ou ne se connaissent pas mutuellement.
 
 \section{Traders en herbe}
 
@@ -144,7 +164,7 @@ En 1D, une solution moins vulnérable est la médiane des coordonnées.
 Alors, $C$ n'a pas d'intérêt à mentir sur sa vraie préférence. Cela reste vrai avec plus d'habitants.
 
 \paragraph*{5)} 
-En 2D pour 3 habitant, une solution moins vulnérable est la médiane géométrique, qui est obtenue en résolvant géométriquement le problème de Fermat \url{https://fr.wikipedia.org/wiki/Probl%C3%A8me_de_Weber}.
+En 2D pour 3 habitant, une solution moins vulnérable est la médiane géométrique, qui est obtenue en résolvant géométriquement \href{https://fr.wikipedia.org/wiki/Probl%C3%A8me_de_Weber}{le problème de Fermat}.
 Contrairement au cas 1D, ici Jean a quand même un intérêt à mentir.
 Cependant il ne pourra pas rapprocher la librairie de chez lui autant qu'il le souhaite.
 
@@ -181,7 +201,7 @@ Pouvez-vous généraliser à une ville possédant plus d'habitants ?
 
 \subsection{Solution}
 
-Le problème est tiré de la vidéo \url{https://www.youtube.com/watch?v=goQ4ii-zBMw} qui illustre les résultats de \cite{MCKELVEY1976472}.
+Le problème est très bien illustré dans cette \href{https://www.youtube.com/watch?v=goQ4ii-zBMw}{vidéo} qui illustre les résultats de \cite{MCKELVEY1976472}.
 
 \paragraph*{1)} 
 Si les habitants ne sont pas alignés, alors peut importe l'emplacement initial, il est possible de faire des propositions d'emplacement successives de sorte qu'il n'y ai pas de limite à l'éloignement de l'emplacement finalement.
@@ -226,18 +246,8 @@ Avec cette stratégie, l'équipe de $n$ joueurs à pour probabilité de défaite
   \rightarrow_{n\rightarrow \infty} \ln(2) \simeq 69\%.
 \]
 Ce résultat s'obtient en dénombrant les permutations de $\{1,\cdots,n\}$ contenant des cycles de taille $k > n/2$.
-C'est un problème bien documenté, généralement formulé avec des prisonniers, par example ici \url{https://en.wikipedia.org/wiki/100_prisoners_problem}.
+C'est un problème bien documenté, généralement formulé avec des prisonniers, par example sur le \href{https://en.wikipedia.org/wiki/100_prisoners_problem}{wiki}.
 
-\section{Sauvez le Spyder-verse}
-
-Vous êtes des Spyder-men et Spyder-women de différentes dimensions du Spyder-verse.
-Votre mission est d'empêcher le Caïd de mener à bien sont nouveau plan machiavélique.
-Pour ce faire, vous devez tous toucher une sphère qui se trouve dans son bureau.
-
-Le problème est que lors de votre infiltration, le Caïd vous a capturé puis enfermé dans différentes cellules, totalement isolées les unes des autres.
-
-A des moments aléatoires, le Caïd choisit l'un d'entre vous et l'amène dans son bureau pour vous interroger.
-Ce qu'il ne sait pas 
 
 \newpage
 \bibliographystyle{plainnat}  
