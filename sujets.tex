@@ -108,7 +108,7 @@ Si non, trouvez un contre example.
 \subsection{Solution}
 
 \paragraph*{1)}
-Toute permutation peut-être décomposée en transposition. 
+Toute permutation peut-être décomposée en transpositions. 
 Un stratégie est d'utiliser un pivot qui sera utilisé pour tous les échanges.
 
 \paragraph*{2)} 
@@ -122,27 +122,27 @@ Ainsi, une permutation de signature impaire ne pourra pas être décomposée en 
 
 \subsection{Problème}
 
-Vous êtes le maire d'une ville de 3 habitants, $A$, $B$ et $C$,  vivant sur une droite.
-Vous voulez y construire une nouvelle librairie pour faire plaisir à ses habitants.
+Vous êtes le maire d'une ville de 3 habitants, $A$, $B$ et $C$,  vivant le long d'une route.
+Vous voulez y construire une nouvelle librairie pour faire plaisir aux habitants.
 Chaque habitant sera d'autant plus content que la librairie sera proche de sa maison. 
-Vous demandez à chaque habitants de mettre un drapeau sur l'emplacement qu'il préférerait.
+Vous demandez à chaque habitant de mettre un drapeau sur l'emplacement qu'il préférerait.
 La libraire sera construite à l'emplacement moyen des drapeaux (cas 1 de la figure).
 
 \paragraph*{1)} 
 L'habitant $C$ connaît les préférences des autres (cas 2 de la figure).
-A-t'il intérêt à mentir ? A quel point?
+A-t'il intérêt à mentir ?
 
 \paragraph*{2)} 
-L'habitant $C$ ne connaît pas les préférences données des autres.
-Il connaît cependant le résultat d'un sondage effectué auprès de tous les habitants (cas 3 de la figure).
-A-t'il intérêt à mentir ? A quel point?
+L'habitant $C$ ne connaît pas les préférences des autres.
+Il connaît cependant le résultat d'un sondage effectué auprès de tous les habitants, où tout le monde a été honnête (cas 3 de la figure).
+A-t'il encore intérêt à mentir ?
 
 \paragraph*{3)} 
 Proposer une nouvelle méthode pour sélectionner l'emplacement de la librairie qui serait moins vulnérable face à quelqu'un comme $C$.
 
 \paragraph*{4)} Généraliser les questions précédentes pour une ville avec plus d'habitants.
 
-\paragraph*{5)} En restant à 3 habitants, pouvez-vous généraliser les question précédentes au cas où les habitants habitent non plus sur une droite, mais dans le plan ? 
+\paragraph*{5)} En restant à 3 habitants, généralisez les questions 1 et 2 au cas où les habitants vivent non plus le long d'une route, mais dans une ville plus classique (en 2 dimensions) ? 
 
 
 \begin{figure}[!h]
@@ -151,7 +151,7 @@ Proposer une nouvelle méthode pour sélectionner l'emplacement de la librairie 
   \caption{
     Cas 1, tout le monde est honnête. 
     Cas 2, l'habitant $C$ ment en connaissant les choix de $A$ et $B$. 
-    Cas 3, l'habitant $C$ se demande comment mentir, sachant le résultat du sondage.}
+    Cas 3, l'habitant $C$ se demande s'il peut gagner à mentir, sachant le résultat du sondage.}
 \end{figure}
 
 \subsection{Solution}
@@ -159,15 +159,17 @@ Proposer une nouvelle méthode pour sélectionner l'emplacement de la librairie 
 \paragraph*{1,2,4)} 
 l'habitant $C$ peut mentir et placer la librairie où il le souhaite. Cela reste vrai avec plus d'habitants.
 
-\paragraph*{3)} 
+\paragraph*{3,4)} 
 En 1D, une solution moins vulnérable est la médiane des coordonnées. 
 Alors, $C$ n'a pas d'intérêt à mentir sur sa vraie préférence. Cela reste vrai avec plus d'habitants.
 
 \paragraph*{5)} 
-En 2D pour 3 habitant, une solution moins vulnérable est la médiane géométrique, qui est obtenue en résolvant géométriquement \href{https://fr.wikipedia.org/wiki/Probl%C3%A8me_de_Weber}{le problème de Fermat}.
-Contrairement au cas 1D, ici Jean a quand même un intérêt à mentir.
-Cependant il ne pourra pas rapprocher la librairie de chez lui autant qu'il le souhaite.
+En 2D pour 3 habitant, une solution moins vulnérable est la médiane géométrique, qui est obtenue en résolvant géométriquement \href{https://fr.wikipedia.org/wiki/Probl%C3%A8me_de_Weber}{le problème de Fermat}. 
+C'est la solution qui minimize la somme des distance euclidiennes.
+Une autre solution consiste à prendre l'intersection des bissectrices du triangle.
 
+Contrairement au cas 1D, ici Jean a quand même un intérêt à mentir.
+Cependant, la zone dans laquelle il peut placer la librairie est bornée.
 
 \section{Le mieux est l'ennemi du bien}
 
@@ -186,7 +188,7 @@ Ce dernier sera alors opposé à celui ayant remporté le vote précédent.
 
 
 \paragraph*{1)} 
-Jusqu'où pouvez vous éloigner le nouveau fast-food ?
+Jusqu'où pouvez vous éloigner le fast-food ?
 
 \paragraph*{2)} 
 Pouvez-vous généraliser à une ville possédant plus d'habitants ?
@@ -204,11 +206,11 @@ Pouvez-vous généraliser à une ville possédant plus d'habitants ?
 Le problème est très bien illustré dans cette \href{https://www.youtube.com/watch?v=goQ4ii-zBMw}{vidéo} qui illustre les résultats de \cite{MCKELVEY1976472}.
 
 \paragraph*{1)} 
-Si les habitants ne sont pas alignés, alors peut importe l'emplacement initial, il est possible de faire des propositions d'emplacement successives de sorte qu'il n'y ai pas de limite à l'éloignement de l'emplacement finalement.
-Sans aller jusqu'à le prouver rigoureusement, on peut le constater en se basant simplement sur des constructions géométriques basiques.
+Si les habitants ne sont pas alignés, alors peut importe l'emplacement initial, il est possible de faire des propositions d'emplacement successives de sorte qu'il n'y ait pas de limite à l'éloignement de l'emplacement finalement.
+Sans aller jusqu'à le prouver rigoureusement, on peut le constater en traçant quelques cercles.
 
 \paragraph*{2)}
-La réponse et le processus sont les mêmes que pour la question précédente.
+La réponse est la même qu'à la question précédente et le processus est semblable.
 
 
 \section{Une histoire de boites}
@@ -223,7 +225,7 @@ L'équipe gagne si \textbf{tous les joueurs} trouvent leur propre numéro.
 
 
 \paragraph*{1)}
-Proposez des stratégies et calculez ou estimez les probabilité de victoire correspondantes.
+Proposez des stratégies et calculez (ou estimez) les chances de victoire correspondantes.
 Vous pourrez tester les performances de vos stratégies en faisant des simulations sur ordinateur.
 
 \paragraph*{2)} Même question avec un plus grand nombre de joueurs. Pour $n$ joueurs, chacun ouvrira $\frac{n}{2}$ boites.
@@ -239,14 +241,14 @@ Vous pourrez tester les performances de vos stratégies en faisant des simulatio
 
 Si les $n$ joueurs ouvrent aléatoirement les boites, alors leur chance de victoire est $\frac{1}{2^n}$. 
 Construire un arbre de probabilités permet d'obtenir ce résultat.
-La stratégie optimale consiste à ouvrir la boite sur laquelle est inscrite son nom, puis celle correspondant au papier de la première, etc. 
+La stratégie optimale consiste à ouvrir la boite sur laquelle est inscrite son numéro, puis ouvrir celle indiquée par le papier, etc. 
 Avec cette stratégie, l'équipe de $n$ joueurs à pour probabilité de défaite
 \[
   \frac{1}{\frac{n}{2} +1} + \frac{1}{\frac{n}{2} + 2} + \cdots \frac{1}{n} 
   \rightarrow_{n\rightarrow \infty} \ln(2) \simeq 69\%.
 \]
 Ce résultat s'obtient en dénombrant les permutations de $\{1,\cdots,n\}$ contenant des cycles de taille $k > n/2$.
-C'est un problème bien documenté, généralement formulé avec des prisonniers, par example sur le \href{https://en.wikipedia.org/wiki/100_prisoners_problem}{wiki}.
+C'est un problème généralement formulé avec des prisonniers, par example sur ce \href{https://en.wikipedia.org/wiki/100_prisoners_problem}{wiki}.
 
 
 \newpage
