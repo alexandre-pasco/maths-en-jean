@@ -59,30 +59,18 @@
 
 \maketitle
 
+\section{Énoncés}
 
-\section{Ta fête}
+\subsection{Ta fête}
+Vous invitez aléatoirement des personnes à votre anniversaire. 
+Au minimum, combien de personnes faut-il inviter pour qu'il existe au moins un groupe de $3$ personnes qui se connaissent (ou ne se connaissent pas) mutuellement ? 
 
-\subsection{Problème}
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/fete.png}
+\end{figure}
 
-Vous choisissez aléatoirement des personnes pour participer à une fête. 
-Au minimum, combien de personnes faut-il choisir pour qu'il existe un groupe de $3$ personnes qui se connaissent (ou ne se connaissent pas) mutuellement ? 
-
-
-\subsection{Solution}
-
-C'est une illustration du 
-\href{
-  https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Ramsey#Exemple_:_calcul_de_R(3,3)_=_6
-}{théorème des amis et des étrangers}
-, qui est lui même un cas particulier du
-\href{
-  https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_des_amis_et_des_%C3%A9trangers
-}{théorème de Ramsey}.
-L'idée est que dès qu'un individu connaît ou ne connaît pas au moins $3$ personnes, alors parmi ces $3+1$ personnes il y a au moins un trio qui se connaissent ou ne se connaissent pas mutuellement.
-
-\section{Traders en herbe}
-
-\subsection{Problème}
+\subsection{Traders en herbe}
 
 Vous êtes $n$ joueurs et chacun de vous a un nombre fétiche entre $1$ et $n$. 
 Deux joueurs ne peuvent pas avoir le même nombre fétiche.
@@ -99,13 +87,93 @@ Pouvez-vous réussir en n'effectuant que des échanges par groupes de trois (cas
 Si oui, proposez une stratégie qui marcherait pour tout nombre de joueurs.
 Si non, trouvez un contre example.
 
-\begin{figure}[!h]
-  \centering
-  \includegraphics[width=0.9\textwidth]{figures/traders.png}
-  \caption{Examples d'échanges à $n=5$ joueurs pour obtenir la distribution désirée. Cas 1, échanges en groupes de 3. Cas 2, échanges en groupes de 3.}
-\end{figure}
 
-\subsection{Solution}
+
+
+\subsection{Une nouvelle librairie en ville}
+
+
+Vous êtes le maire d'une ville de 3 habitants, Adrien, Benoit et Clément,  vivant le long d'une route.
+Vous voulez y construire une nouvelle librairie pour faire plaisir aux habitants.
+Chaque habitant sera d'autant plus content que la librairie sera proche de sa maison. 
+Vous demandez à chaque habitant de mettre un drapeau sur l'emplacement qu'il préférerait.
+La libraire sera construite à l'emplacement moyen des drapeaux (cas 1 de la figure).
+
+\paragraph*{1)} 
+Si Clément connaît les préférences des autres, a-t'il intérêt à mentir sur la sienne ?
+
+\paragraph*{2)} 
+Si clément ne connaît pas les préférences des autres, mais qu'il connaît le résultat d'un sondage effectué auprès de tous les habitants, où tout le monde a été honnête, a-t'il encore intérêt à mentir ?
+
+\paragraph*{3)} 
+Proposez une nouvelle méthode pour sélectionner l'emplacement de la librairie qui serait moins vulnérable face à Clément.
+
+\paragraph*{4)} 
+Généralisez les questions précédentes pour une ville avec plus d'habitants.
+
+\paragraph*{5)} 
+En restant à 3 habitants, généralisez les questions 1 et 2 au cas où les habitants vivent non plus le long d'une route, mais dans une ville plus classique (dans le plan, et 2 dimensions) ? 
+
+
+
+\subsection{Le mieux est l'ennemi du bien}
+
+Vous êtes la mairesse d'une ville de 3 habitants.
+Un nouveau fast-food va se construire au centre de la ville, et ça ne vous plaît pas.
+La construction est inévitable, seul l'emplacement peut être modifié.
+Votre but est de l'éloigner autant que possible de l'emplacement d'origine.
+
+Pour ce faire, vous pouvez proposer un nouvel emplacement à vos habitants, qui sera opposé au précédent lors d'un vote à la majorité.
+Chaque habitant votera pour l'emplacement le plus proche de chez lui.
+
+Vous pouvez faire voter un nouvel emplacement autant de fois que vous le souhaitez.
+Ce dernier sera alors opposé à celui ayant remporté le vote précédent.
+
+
+\paragraph*{1)} 
+Jusqu'où pouvez vous éloigner le fast-food ?
+
+\paragraph*{2)} 
+Pouvez-vous généraliser à une ville possédant plus d'habitants ?
+
+
+\subsection{Une histoire de boites}
+
+Vous êtes une équipe de 4 joueurs devant l'entrée d'une pièce. 
+Celle-ci contient 4 boites fermées.
+Chacun de vos prénoms est inscrit sur l'une des boites.
+Vos prénoms sont également écrits sur 4 papiers (1 prénom par papier), distribués aléatoirement dans les boites (1 papier par boite).
+
+Chacun votre tour, vous entrez dans la pièce et ouvrez 2 boites de votre choix, dans l'ordre de votre choix. 
+Vous en lisez le contenu, puis les refermez.
+Vous sortez ensuite de la pièce du côté opposé à l'entrée, en laissant tout exactement comme vous l'avez trouvé.
+Vous ne pouvez pas interagir avec vos coéquipiers.
+
+L'équipe gagne si tous les joueurs trouvent leu propre prénom dans les boites. Avant de commencer, vous pouvez vous concerter pour choisir une stratégie.
+
+\paragraph*{1)}
+Proposez des stratégies et calculez (ou estimez) les chances de victoire correspondantes.
+Vous pourrez tester les performances de vos stratégies en faisant des simulations sur ordinateur.
+
+\paragraph*{2)} 
+Même question avec un plus grand nombre de joueurs. Pour $n$ joueurs, chacun ouvrira $\frac{n}{2}$ boites.
+
+
+\section{solutions}
+
+\subsection{Ta fête}
+
+C'est une illustration du 
+\href{
+  https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Ramsey#Exemple_:_calcul_de_R(3,3)_=_6
+}{théorème des amis et des étrangers}
+, qui est lui même un cas particulier du
+\href{
+  https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_des_amis_et_des_%C3%A9trangers
+}{théorème de Ramsey}.
+L'idée est que dès qu'un individu connaît ou ne connaît pas au moins $3$ personnes, alors parmi ces $3+1$ personnes il y a au moins un trio qui se connaissent ou ne se connaissent pas mutuellement.
+
+\subsection{Traders en herbe}
 
 \paragraph*{1)}
 Toute permutation peut-être décomposée en transpositions. 
@@ -117,44 +185,14 @@ En effet, un cycle de taille trois est de signature paire (i.e. décomposable en
 Ainsi, une permutation de signature impaire ne pourra pas être décomposée en une composition de tels cycles.
 
 
-\section{Une nouvelle librairie en ville}
-
-
-\subsection{Problème}
-
-Vous êtes le maire d'une ville de 3 habitants, $A$, $B$ et $C$,  vivant le long d'une route.
-Vous voulez y construire une nouvelle librairie pour faire plaisir aux habitants.
-Chaque habitant sera d'autant plus content que la librairie sera proche de sa maison. 
-Vous demandez à chaque habitant de mettre un drapeau sur l'emplacement qu'il préférerait.
-La libraire sera construite à l'emplacement moyen des drapeaux (cas 1 de la figure).
-
-\paragraph*{1)} 
-L'habitant $C$ connaît les préférences des autres (cas 2 de la figure).
-A-t'il intérêt à mentir ?
-
-\paragraph*{2)} 
-L'habitant $C$ ne connaît pas les préférences des autres.
-Il connaît cependant le résultat d'un sondage effectué auprès de tous les habitants, où tout le monde a été honnête (cas 3 de la figure).
-A-t'il encore intérêt à mentir ?
-
-\paragraph*{3)} 
-Proposer une nouvelle méthode pour sélectionner l'emplacement de la librairie qui serait moins vulnérable face à quelqu'un comme $C$.
-
-\paragraph*{4)} Généraliser les questions précédentes pour une ville avec plus d'habitants.
-
-\paragraph*{5)} En restant à 3 habitants, généralisez les questions 1 et 2 au cas où les habitants vivent non plus le long d'une route, mais dans une ville plus classique (en 2 dimensions) ? 
-
-
-\begin{figure}[!h]
+\begin{figure}[!ht]
   \centering
-  \includegraphics[width=0.50\textwidth]{figures/library.png}
-  \caption{
-    Cas 1, tout le monde est honnête. 
-    Cas 2, l'habitant $C$ ment en connaissant les choix de $A$ et $B$. 
-    Cas 3, l'habitant $C$ se demande s'il peut gagner à mentir, sachant le résultat du sondage.}
+  \includegraphics[width=0.9\textwidth]{figures/indice_traders.png}
+  \caption{Examples d'échanges à $n=5$ joueurs pour obtenir la distribution désirée. Cas 1, échanges en groupes de 3. Cas 2, échanges en groupes de 3.}
 \end{figure}
 
-\subsection{Solution}
+
+\subsection{Librarie}
 
 \paragraph*{1,2,4)} 
 l'habitant $C$ peut mentir et placer la librairie où il le souhaite. Cela reste vrai avec plus d'habitants.
@@ -171,37 +209,18 @@ Une autre solution consiste à prendre l'intersection des bissectrices du triang
 Contrairement au cas 1D, ici Jean a quand même un intérêt à mentir.
 Cependant, la zone dans laquelle il peut placer la librairie est bornée.
 
-\section{Le mieux est l'ennemi du bien}
 
-\subsection{Problème}
-
-Vous êtes la mairesse d'une ville de 3 habitants.
-Un nouveau fast-food va se construire au centre de la ville, et ça ne vous plaît pas.
-La construction est inévitable, seul l'emplacement peut être modifié.
-Votre but est de l'éloigner autant que possible de l'emplacement d'origine.
-
-Pour ce faire, vous pouvez proposer un nouvel emplacement à vos habitants, qui sera opposé au précédent lors d'un vote à la majorité.
-Chaque habitant votera pour l'emplacement le plus proche de chez lui.
-
-Vous pouvez faire voter un nouvel emplacement autant de fois que vous le souhaiter.
-Ce dernier sera alors opposé à celui ayant remporté le vote précédent.
-
-
-\paragraph*{1)} 
-Jusqu'où pouvez vous éloigner le fast-food ?
-
-\paragraph*{2)} 
-Pouvez-vous généraliser à une ville possédant plus d'habitants ?
-
-
-\begin{figure}[!h]
-  \centering
-  \includegraphics*[width=0.95\textwidth]{figures/democracy.png}
-  \caption{Deux votes successifs. Une nouvelle proposition est en gris. La proposition votée précédemment est en noir.}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.50\textwidth]{figures/indice_library.png}
+\caption{
+  Cas 1, tout le monde est honnête. 
+  Cas 2, l'habitant $C$ ment en connaissant les choix de $A$ et $B$. 
+  Cas 3, l'habitant $C$ se demande s'il peut gagner à mentir, sachant le résultat du sondage.}
 \end{figure}
 
 
-\subsection{Solution}
+\subsection{Le mieux est l'ennemi du bien}
 
 Le problème est très bien illustré dans cette \href{https://www.youtube.com/watch?v=goQ4ii-zBMw}{vidéo} qui illustre les résultats de \cite{MCKELVEY1976472}.
 
@@ -212,32 +231,13 @@ Sans aller jusqu'à le prouver rigoureusement, on peut le constater en traçant 
 \paragraph*{2)}
 La réponse est la même qu'à la question précédente et le processus est semblable.
 
-
-\section{Une histoire de boites}
-
-\subsection{Problème}
-Vous êtes une équipe de 4 joueurs devant l'entrée d'une pièce, contenant 4 boîtes fermées.
-A tour de rôle, vous entrez dans la pièce, ouvrez 2 boîtes et lisez leur contenu.
-Vous sortez ensuite de la pièce en la laissant exactement comme elle était à votre arrivée. 
-Vous ne pouvez interagir entre vous qu'avant d'entrer dans la pièce.
-L'équipe gagne si \textbf{tous les joueurs} trouvent leur propre numéro. 
-
-
-
-\paragraph*{1)}
-Proposez des stratégies et calculez (ou estimez) les chances de victoire correspondantes.
-Vous pourrez tester les performances de vos stratégies en faisant des simulations sur ordinateur.
-
-\paragraph*{2)} Même question avec un plus grand nombre de joueurs. Pour $n$ joueurs, chacun ouvrira $\frac{n}{2}$ boites.
-
-\begin{figure}[!h]
+\begin{figure}[!ht]
   \centering
-  \includegraphics[height=0.3\textheight]{figures/boites.png}
-  \caption{Le joueur 1 a trouvé la feuille correspondant à son numéro, il ne fera donc pas perdre l'équipe. Le joueur 2 n'a pas trouvé sa feuille, l'équipe sera donc annoncée perdante à la fin des passages.}
+  \includegraphics*[width=0.95\textwidth]{figures/indice_democracy.png}
+  \caption{Deux votes successifs. Une nouvelle proposition est en gris. La proposition votée précédemment est en noir.}
 \end{figure}
 
-
-\subsection{Solution}
+\subsection{Une histoire de boites}
 
 Si les $n$ joueurs ouvrent aléatoirement les boites, alors leur chance de victoire est $\frac{1}{2^n}$. 
 Construire un arbre de probabilités permet d'obtenir ce résultat.
@@ -249,6 +249,13 @@ Avec cette stratégie, l'équipe de $n$ joueurs à pour probabilité de défaite
 \]
 Ce résultat s'obtient en dénombrant les permutations de $\{1,\cdots,n\}$ contenant des cycles de taille $k > n/2$.
 C'est un problème généralement formulé avec des prisonniers, par example sur ce \href{https://en.wikipedia.org/wiki/100_prisoners_problem}{wiki}.
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[height=0.3\textheight]{figures/indice_boites.png}
+\caption{Le joueur 1 a trouvé la feuille correspondant à son numéro, il ne fera donc pas perdre l'équipe. Le joueur 2 n'a pas trouvé sa feuille, l'équipe sera donc annoncée perdante à la fin des passages.}
+\end{figure}
 
 
 \newpage
