@@ -63,13 +63,16 @@
 
 \subsection{Ta fête}
 Vous invitez aléatoirement des personnes à votre anniversaire. 
-Au minimum, combien de personnes faut-il inviter pour qu'il existe au moins un groupe de $3$ personnes qui se connaissent (ou ne se connaissent pas) mutuellement ? 
+Au minimum, combien de personnes faut-il inviter pour être sûr d'avoir au moins un groupe de $3$ personnes qui se connaissent (ou ne se connaissent pas) mutuellement ? 
 
+\vspace{3cm}
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=0.9\textwidth]{figures/fete.png}
+  \caption*{Image tirée du film \textit{Spider-Man : Across the Spider-Verse}.}
 \end{figure}
 
+\newpage
 \subsection{Traders en herbe}
 
 Vous êtes $n$ joueurs et chacun de vous a un nombre fétiche entre $1$ et $n$. 
@@ -87,13 +90,19 @@ Pouvez-vous réussir en n'effectuant que des échanges par groupes de trois (cas
 Si oui, proposez une stratégie qui marcherait pour tout nombre de joueurs.
 Si non, trouvez un contre example.
 
+\vspace{3cm}
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[height=0.5\textheight]{figures/traders.jpg}
+  \caption*{}
+\end{figure}
 
 
-
+\newpage
 \subsection{Une nouvelle librairie en ville}
 
 
-Vous êtes le maire d'une ville de 3 habitants, Adrien, Benoit et Clément,  vivant le long d'une route.
+Vous êtes le maire d'une ville de 3 habitants, Adrien, Benoît et Clément,  vivant le long d'une route.
 Vous voulez y construire une nouvelle librairie pour faire plaisir aux habitants.
 Chaque habitant sera d'autant plus content que la librairie sera proche de sa maison. 
 Vous demandez à chaque habitant de mettre un drapeau sur l'emplacement qu'il préférerait.
@@ -115,7 +124,14 @@ Généralisez les questions précédentes pour une ville avec plus d'habitants.
 En restant à 3 habitants, généralisez les questions 1 et 2 au cas où les habitants vivent non plus le long d'une route, mais dans une ville plus classique (dans le plan, et 2 dimensions) ? 
 
 
+\vspace{3cm}
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/flag.png}
+\end{figure}
 
+
+\newpage
 \subsection{Le mieux est l'ennemi du bien}
 
 Vous êtes la mairesse d'une ville de 3 habitants.
@@ -137,7 +153,16 @@ Jusqu'où pouvez vous éloigner le fast-food ?
 Pouvez-vous généraliser à une ville possédant plus d'habitants ?
 
 
+\vspace{3cm}
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/fast-food.png}
+\end{figure}
+
+\newpage
 \subsection{Une histoire de boites}
+
+\subsubsection{Enoncé boites}
 
 Vous êtes une équipe de 4 joueurs devant l'entrée d'une pièce. 
 Celle-ci contient 4 boites fermées.
@@ -157,6 +182,45 @@ Vous pourrez tester les performances de vos stratégies en faisant des simulatio
 
 \paragraph*{2)} 
 Même question avec un plus grand nombre de joueurs. Pour $n$ joueurs, chacun ouvrira $\frac{n}{2}$ boites.
+
+\vspace{3cm}
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/boites.png}
+\end{figure}
+
+\newpage
+\subsubsection{Énoncés spider-verse}
+
+Vous êtes 4 spider-men et vous venez de sauver le spider-verse en battant le Caïd.
+Il est temps pour vous de rentrer dans vos univers respectives.
+Vous avez pour cela une machine à voyager entre les dimensions.
+Elle se présente sous la forme d'une petite salle, totalement isolée de l'extérieur, qui contient 4 boutons, sur lesquels sont inscrits les noms de vos univers respectifs.
+
+Le plan est simple: chaque spider entre dans la machine, appuie sur le bouton de son univers et traverse le portail dimensionnel qui s'ouvre alors. 
+La porte de la machine s'ouvre ensuite et le spider suivant peut faire la même chose.
+
+Enfin ça, c'était le plan. 
+Il va falloir le changer car, pendant votre combat, le docteur Octopus a mélangé les branchements de la machine.
+Résultats, vous ne savez pas à l'avance quel bouton ouvre quel portail.
+Vous savez cependant que la machine permet d'ouvrir 2 portails en même temps.
+Ainsi, chaque spider pourra appuyer sur 2 boutons puis traverse l'un des deux portails ouverts.
+Notez que pour des questions de sécurité, vous devez laisser la machine dans l'état exacte dans lequel vous l'avez trouvée.
+
+
+\paragraph*{1)}
+Proposez des stratégies et calculez (ou estimez) les chances que \textbf{tout le monde} rentre dans le bon univers.
+Vous pourrez tester les performances de vos stratégies en faisant des simulations sur ordinateur.
+
+\paragraph*{2)} 
+Même question avec un plus grand nombre de spider-men. Pour $n$ spider-men, chacun pourra ouvrir $\frac{n}{2}$ portails.
+
+\vspace{3cm}
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/boites_spider.png}
+  \caption*{Miles Morales (1610) | Peter B. Parker (616) | Gwen Stacy (65) | Noir (90214). Image tirée du film \textit{Spider-Man: New Generation}.}
+\end{figure}
 
 
 \section{solutions}
@@ -192,7 +256,7 @@ Ainsi, une permutation de signature impaire ne pourra pas être décomposée en 
 \end{figure}
 
 
-\subsection{Librarie}
+\subsection{Librairie}
 
 \paragraph*{1,2,4)} 
 l'habitant $C$ peut mentir et placer la librairie où il le souhaite. Cela reste vrai avec plus d'habitants.
@@ -258,7 +322,7 @@ C'est un problème généralement formulé avec des prisonniers, par example sur
 \end{figure}
 
 
-\newpage
+
 \bibliographystyle{plainnat}  
 \bibliography{sujets}
 
