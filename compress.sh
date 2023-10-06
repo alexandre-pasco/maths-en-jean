@@ -1,0 +1,1 @@
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=sujets_compressed.pdf sujets.pdf
