@@ -1,0 +1,8 @@
+- Can you hang a picture by 2 nails so that it falls down if any nail is removed? How about 3? N? 
+- Why only 5 platonic solids
+- Three squares geometry problem
+- tiling with rectangles so that L can't fit (RDL 2024, Denis Grenier "la chasse à la bête")
+- Black hats and white hats (dwarfs problem from Elric)
+- cut out a triangle with only 1 cut
+- Pogorelov theorem with paper
+
