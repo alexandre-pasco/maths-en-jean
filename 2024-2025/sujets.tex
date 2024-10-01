@@ -31,7 +31,6 @@
 \usepackage{anyfontsize}
 \usepackage[labelfont=bf]{caption}
 
-
 \title{Sujets Maths en Jeans 2023-2024}
 
 \author{
@@ -44,7 +43,7 @@
   }
 
 %%%% My commands
-\newcommand{\sectionbreak}{\clearpage}
+%\newcommand{\sectionbreak}{\clearpage}
 
 %%%% Theorems
 \newtheorem{theorem}{Theorem}
@@ -60,35 +59,172 @@
 \maketitle
 
 
-\section{Sujet 1}
+\clearpage
+\section{Les tablettes de M. Prodnose}
 
-Enoncé
+M. Prodnose aime le chocolat, mais il n'aime pas partager, donc il ne veut plus de tablettes de chocolat classiques.
+Il se lance alors dans la fabrication de ses propres tablettes de chocolat, et son but est de fabriquer des tablettes \textit{bien faites} qui ne soient pas \textit{partageables}.
+\begin{itemize}
+  \item Une tablette est dite \textit{bien faite} si c'est un carré de côté $n>1$ contenant au moins $2$ carreaux, et si tous ses carreaux sont des carrés de taille entière ($1,2,\cdots, n$).
+  \item Une tablette est dite \textit{partageable} s'il est possible de la couper en deux avec un seul coup de couteau, sans passer à travers un carreau.
+  Elle est dite \textit{non-partageable} si elle n'est pas \textit{partageable}.
+\end{itemize}
 
-\paragraph*{1)} Question 1
+\paragraph*{1)} 
+Est-il possible de fabriquer de telles tablettes ?
+Si oui, de quelle(s) taille(s) peuvent-elles être ? 
+
+\paragraph*{2)} 
+Au minimum, combien de carreaux doit posséder une tablette \textit{bien faite} de taille $n$ \textit{non-partageable}?
+
+\paragraph*{3)} 
+Au maximum, combien de carreaux doit posséder une tablette \textit{bien faite} de taille $n$ \textit{non-partageable}?
+
 \vspace{3cm}
 \begin{figure}[!ht]
   \centering
-  \includegraphics[width=0.3\textwidth]{figures/traders.jpg}
-  \caption*{caption}
+  \includegraphics[width=0.7\textwidth]{figures/chocolat.png}
+  \caption*{Deux tablettes rectangulaires de taille $5\times 7$. 
+  Ces tablettes ne sont pas \textit{bien faites}.
+  Celle de gauche est \textit{non-partageable} mais celle de droite est \textit{partageable}.}
+\end{figure}
+
+
+\clearpage
+\section{Attaque extraterrestre}
+
+La terre est attaquée par des extraterrestres venus de différents astres du système solaire: Mars, Titan et Europe.
+La forme des vaisseaux extraterrestres dépend de là d'où ils viennent (voir figure).
+Tom possède un champ carré de taille $5\times 5$ quadrillé en $25$ emplacements de taille $1\times 1$.
+Tom veut protéger son champ en utilisant le moins de pièges possible.
+
+\paragraph*{1-a)}
+Quel est le nombre minimum de pièges dont Tom aura besoin pour protéger son champ des extraterrestres venant de Mars ?
+
+\paragraph*{1-b)}
+Quel est le nombre minimum de pièges dont Tom aura besoin pour protéger son champ des extraterrestres venant de Titan ?
+
+\paragraph*{1-c)}
+Quel est le nombre minimum de pièges dont Tom aura besoin pour protéger son champ des extraterrestres venant d'Europe ?
+
+\paragraph*{2)}
+Mêmes questions pour Emily qui possède un champ carré de taille $6\times 6$.
+
+
+\vspace{3cm}
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/attaque.png}
+  \caption*{Piège et vaisseaux extraterrestres.}
+\end{figure}
+
+
+\clearpage
+\section{Réunion au sommet}
+
+Annabelle, Benoît, Clémence, Damien et Estelle sont les $5$ membres du club de boxe Anglaise de leur collège.
+Quand les membres se réunissent, ils s'assoient autour d'une table ronde tournante, sur laquelle sont disposées des pancartes avec leurs noms.
+La réunion se déroule en suivant une seule règle: si un membre a une pancarte avec son nom devant lui, il parle, puis fait tourner la table dan le sens horaire jusqu'à ce que la pancarte suivante arrive devant lui.
+La réunion s'arrête quand tout le monde a parlé.
+
+\paragraph*{1)}
+Les membres peuvent-t-ils se placer de sorte que tout le monde parle sans que personne ne se coupe la parole ?
+Si oui, quelles sont les dispositions possibles ?
+
+\paragraph*{2)}
+Même question pour un club comportant $n$ membres.
+
+\vspace{3cm}
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/reunion.png}
+  \caption*{Une réunion qui se déroule mal: Benoît, Clémence et Damien parlent en même temps. }
+\end{figure}
+
+
+\clearpage
+\section{Des ballons qui ne tournent pas rond}
+
+On veut créer des solides fermés à partir de feuilles de papier découpées en formes quelconques en collant leur bords.
+Le papier peut se déformer, mais il ne doit jamais se plier ni se déchirer.
+
+\paragraph*{1)}
+Sur la première figure, on voit qu'en découpant deux languettes on peut obtenir une sorte de balle de tennis, qui est un solide fermé.
+Pour 2 bouts de papier, sous quelles conditions peut-on en coller les bords pour obtenir un solide fermé ?
+
+
+\paragraph*{2)}
+De la même manière, sur la seconde figure, on voit qu'en découpant 6 ``croix'', on peut obtenir le ballon de la coupe du monde de football 2014.
+Pour $n$ bouts de papier, sous quelles conditions peut-on en coller les bords pour obtenir un solide fermé ?
+
+
+\vspace{3cm}
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[height=0.2\textheight]{figures/tennis.png}
+  \caption*{A gauche, une balle de tennis.
+  A droite, les deux languettes de feutre qui la recouvrent.}
 \end{figure}
 
 
 
-\section{Sujet 2}
-
-Enoncé
-
-\paragraph*{1)} Question 1
 \vspace{3cm}
 \begin{figure}[!ht]
   \centering
-  \includegraphics[width=0.3\textwidth]{figures/traders.jpg}
-  \caption*{caption}
+  \includegraphics[height=0.2\textheight]{figures/ballon.png}
+  \hspace{1cm}
+  \includegraphics[height=0.2\textheight]{figures/ballon-morceaux.jpg}
+  \caption*{A gauche, le ballon de la coupe du monde de football 2014 au Brésil.
+  A droite, les 6 pièces qui le recouvrent}
 \end{figure}
 
 
 
-\bibliographystyle{plainnat}  
+\clearpage
+\section{Défilé de mode}
+
+Bientôt aura lieu le C-event, un défilé de mode annuel sur le thème de la casquette.
+L'agence M\&L de mannequinat y envoie ses 100 mannequins pour remporter le premier prix.
+Cependant cette année, les règles du défilé sont particulières.
+\begin{itemize}
+  \item Pour chaque agence, les mannequins sont placés en file indienne et regardent tous dans la même direction, de sorte chacun peut voir ceux qui sont avant lui, mais pas ceux après.
+  \item Sur la tête de chaque mannequin, les organisateurs viennent placer au hasard une casquette rouge ou verte, en faisant en sorte que son porteur n'en voit pas la couleur.
+  \item A tour de rôle et en commençant par le dernier de la file (celui qui voit tous les autres), chaque mannequin annonce la couleur présumée de sa casquette. L'agence marquera autant de points que de bonne réponse.
+\end{itemize}
+
+\paragraph*{1)}
+Établir une stratégie pour que l'agence marque le plus de points possible.
+
+\paragraph*{2)}
+Même question avec $3$ couleurs différentes de casquettes.
+
+
+\vspace{3cm}
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/casquette.png}
+  \caption*{}
+\end{figure}
+
+
+\clearpage
+\section{chocolat au savon}
+
+
+\clearpage
+\section*{Bibliographie}
+
+théorème de Pogorelov \cite{ghysBrazucaBallonCubique2014}
+
+
+\cite{grenierMathematiquesDiscretesMine2018}
+
+\cite{grenierSituationsRecherchePour2017}
+
+\cite{godotSituationsRechercheJeux2005}
+
+
+\bibliographystyle{apalike}  
 \bibliography{sujets}
 
 \end{document}
