@@ -9,4 +9,4 @@
 *.gz
 *.png
 *.jpeg
-figures/*
+*/figures/*
