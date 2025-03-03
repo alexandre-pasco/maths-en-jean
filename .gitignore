@@ -11,4 +11,4 @@
 *.jpeg
 */figures
 *.sh
-.vscode
+.vscode/*
